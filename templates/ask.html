@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}
+	Ask
+{% endblock %}
+
+{% block header %}
+	New Question
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<div class="panel-body row">
+					<div class="col-md-12" id="new_question">
+						<form class="form-horizontal">
+							<div class="form-group form-group-lg">
+								<label for="title" class="col-md-1 control-label">Title</label>
+								<div class="col-md-9">
+									<input type="text" class="form-control" id="title" minlength="10" autocomplete>
+								</div>
+							</div>
+							<div class="form-group form-group-lg">
+								<label for="text" class="col-md-1 control-label">Text</label>
+								<div class="col-md-9">
+									<textarea id="text" class="form-control" rows="10"></textarea>
+								</div>
+							</div>
+							<div class="form-group form-group-lg">
+								<label for="tags" class="col-md-1 control-label">Tags</label>
+								<div class="col-md-9">
+									<input type="text" id="tags" class="form-control">
+								</div>
+							</div>
+							<div class="form-group form-group-lg">
+								<div class="col-md-offset-1 col-md-9">
+									<button type="submit" class="btn btn-success ask-button">ASK</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+{% endblock %}

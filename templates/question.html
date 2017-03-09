@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}
+	Question
+{% endblock %}
+
+{% block userbar %}
+	<li>
+		<div>
+			<div class="row">
+				<div class="col-md-12">
+				<span class="pull-right user" style="color: white">
+					Username
+				</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12"><span><a href="#" class="pull-left user">setting</a></span>
+					<span class="user"><a href="#" class="user">log out</a></span></div>
+			</div>
+		</div>
+	</li>
+
+{% endblock userbar %}
+{% block header %}
+{% endblock %}
+
+{% block content %}
+	<div class="container-fluid question">
+		<div class="row" style="padding-bottom: 30px">
+			<div class="col-md-3 text-center">
+				<img src="#" class="img-thumbnail user-avatar" alt="...">
+			</div>
+			<div class="col-md-9" style="word-wrap: break-word">
+				<a href="#"><h3 style="margin: 0 0 0 0">How to build a moon park?</h3></a>
+				<p>Здесь будет отображаться текст вопроса</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 text-center">
+				<div class="btn-group rate" aria-label="...">
+					<a href="#" role="button" class="glyphicon glyphicon-thumbs-up like"></a>
+					<span style="font-size: 18px">1</span>
+					<a href="#" role="button" class="glyphicon glyphicon-thumbs-down dislike"></a>
+				</div>
+			</div>
+			<div class="col-md-9" style="margin-top: 10px">
+				<a href="#" style="margin-right: 30px;">answers(3)</a>
+				Tags:
+				<a href="#" class="tags">black-jack</a>
+				<a href="#" class="tags">bender</a>
+				<a href="#" class="tags">whores</a>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<div class="panel-body row">
+					<div class="col-md-3 text-center">
+						<img src="#" class="img-thumbnail user-avatar" alt="...">
+					</div>
+					<div class="col-md-9" style="word-wrap: break-word">
+						<p>Здесь будет отображаться текст ответа</p>
+					</div>
+				</div>
+				<div class="panel-body row">
+					<div class="col-md-3 text-center">
+						<div class="btn-group" aria-label="...">
+							<a href="#" role="button" class="glyphicon glyphicon-thumbs-up like"></a>
+							<span style="font-size: 18px">1</span>
+							<a href="#" role="button" class="glyphicon glyphicon-thumbs-down dislike"></a>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="checkbox correctCheck"><label>
+							<input type="checkbox" id="checkboxCorrect" value="option1">
+							Correct!
+						</label></div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<hr>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form-group">
+					<textarea type="text" class="form-control form-group" placeholder="Enter your answer here..."
+					          rows="7"></textarea>
+					<button type="submit" class="btn btn-success">ANSWER</button>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}

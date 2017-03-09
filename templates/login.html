@@ -1,0 +1,30 @@
+{% block modal %}
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<button type="button" class="close glyphicon glyphicon-remove glyphicon" data-dismiss="modal"
+					        aria-label="Close"><span
+							aria-hidden="true"></span></button>
+					<h4 class="modal-title" id="myModalLabel">LogIn to ASKotelnikov
+						<small>Welcome back!</small>
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" method="post" action='' name="login_form">
+						<div class="form-group">
+							<label for="log" class="control-label col-md-3">Email</label>
+							<div class="col-md-9"><input type="email" class="form-control" id="log"></div>
+						</div>
+						<div class="form-group">
+							<label for="pswd" class="control-label col-md-3">Password</label>
+							<div class="col-md-9"><input type="password" class="form-control" id="pswd"></div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					New To ASKotelnikov.com?<a href="#" class="btn btn-primary ">Register</a>
+				</div>
+			</div>
+		</div>
+	</div> {% endblock %}

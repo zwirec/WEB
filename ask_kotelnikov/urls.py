@@ -18,13 +18,13 @@ from django.contrib import admin
 
 admin.autodiscover()
 
-from ask_kotelnikov.views import hello, index, question, ask, tag
+from ask_kotelnikov.views import index, question, ask, tag, test
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^hello/$', hello),
     url(r'^$', index),
     url(r'^question/$', question),
     url(r'^ask/$', ask),
     url(r'^tag/$', tag),
+    url(r'^test/$', test),
 ]
